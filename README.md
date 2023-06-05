@@ -19,8 +19,12 @@
 
 ### JS
 - Ripasso veloce
-- Alcune buone regole
-- Array + Objects
+- Objects: https://javascript.info/object
+- Copia per valore/referenza: https://javascript.info/object-copy
+- Array: https://javascript.info/array
+
+### Tools
+- Can I use: https://caniuse.com/
 
 -----
 
