@@ -15,6 +15,15 @@
     - Giorgia Boa
     - ...
 
+## 2023 - 06 - 05
+
+### JS
+- Ripasso veloce
+- Alcune buone regole
+- Array + Objects
+
+-----
+
 ## 2023 - 06 - 01
 
 ### JS 
@@ -24,4 +33,5 @@
 
 ### Tools
 - Emmet scrivere HTML/CSS più veloci: https://www.emmet.io/
+
 
