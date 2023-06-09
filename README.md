@@ -15,6 +15,33 @@
     - Giorgia Boa
     - ...
 
+## 2023 - 06 - 08
+
+### JS
+- Functions: https://javascript.info/function-basics
+
+### Tools
+- Can I use: https://caniuse.com/
+
+### Misc
+- Roadmap per il front-end: https://roadmap.sh/frontend 
+
+-----
+
+## 2023 - 06 - 07
+
+### JS
+- For, for...of, for..in: https://javascript.info/array#loops
+- While & loops: https://javascript.info/while-for
+
+### Tools
+- Can I use: https://caniuse.com/
+
+### Misc
+- Syntactic Sugar: https://en.wikipedia.org/wiki/Syntactic_sugar
+
+-----
+
 ## 2023 - 06 - 05
 
 ### JS
