@@ -1,0 +1,14 @@
+{
+  "name": "first-dom-lesson",
+  "version": "1.0.0",
+  "description": "First attempt to interact with DOM",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite"
+  },
+  "author": "Luca Pagliaro",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^4.3.9"
+  }
+}

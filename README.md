@@ -15,6 +15,35 @@
     - Giorgia Boa
     - ...
 
+## 2023 - 06 - 12
+
+### JS
+- Array methods: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+- Arrow Functions: https://javascript.info/arrow-functions-basics
+- Manimpolazione del DOM: 
+
+### Tools
+- 
+
+### Misc
+- 
+
+-----
+
+
+## 2023 - 06 - 09
+
+### JS
+- Functions: https://javascript.info/function-basics
+
+### Tools
+- Can I use: https://caniuse.com/
+
+### Misc
+- Roadmap per il front-end: https://roadmap.sh/frontend 
+
+-----
+
 ## 2023 - 06 - 08
 
 ### JS
