@@ -18,6 +18,20 @@
 ## 2023 - 06 - 12
 
 ### JS
+- Ripasso DOM 
+- Event delegation: https://javascript.info/event-delegation
+
+### Tools
+- 
+
+### Misc
+- 
+
+-----
+
+## 2023 - 06 - 12
+
+### JS
 - Array methods: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 - Arrow Functions: https://javascript.info/arrow-functions-basics
 - Manimpolazione del DOM: 

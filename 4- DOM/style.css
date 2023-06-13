@@ -1,3 +1,19 @@
 body{
     font-size: 20px;
 }
+
+.form-group{
+    display: block;
+}
+
+.form-group span{
+    display: block;
+    margin: 0 0 .5em;
+}
+
+.form-group input{
+    border: 1px solid #eee;
+    line-height: 1.61;
+    font-size: 1rem;
+    padding: 0 .5em;
+}
