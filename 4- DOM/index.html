@@ -1,29 +1,43 @@
 <html>
-    <head>
-        <title>DOM Lesson</title>
-    </head>
-    <body>
-        <div id="pippo"></div>
-        <div class="pausa" style="display: none;">
-            <h1>Nome corso "Frontend Developer" Codice corso " 002protd2329395"</h1>
-            <br />
-            Pausa dalle ore 09.51 alle ore 10.06
-        </div>
 
-        <hr>
+<head>
+    <title>DOM Lesson</title>
+</head>
 
-        <form>
-            <label class="form-group">
-                <span>Cognome</span>
-                <input type="text" 
-                   placeholder="Cognome"
-                   oninput="logOnInput(event)"
+<body>
+    <div id="pippo"></div>
+    <div class="pausa" style="display: none;">
+        <h1>Nome corso "Frontend Developer" Codice corso " 002protd2329395"</h1>
+        <br />
+        Pausa dalle ore 09.51 alle ore 10.06
+    </div>
+
+    <hr>
+
+    <form>
+        <label class="form-group">
+            <span>Nome</span>
+            <input type="text" 
+                   autocomplete="given-name"
+                   placeholder="nome" 
                    />
-            </label>
-        </form>
+        </label>
+        <label class="form-group">
+            <span>Cognome</span>
+            <input type="text" 
+                   placeholder="Cognome" 
+                   oninput="logOnInput(event)" 
+                   />
+        </label>
+    </form>
 
-        <hr>
+    <hr>
 
-        <script src="./index.js" type="module"></script>
-    </body>
+    <div class="output">
+        Nome completo: <span></span>
+    </div>
+
+    <script src="./index.js" type="module"></script>
+</body>
+
 </html>

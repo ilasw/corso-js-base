@@ -17,3 +17,7 @@ body{
     font-size: 1rem;
     padding: 0 .5em;
 }
+
+/* [class^="form-"]{
+    background: rebeccapurple;
+} */
