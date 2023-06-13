@@ -19,13 +19,8 @@
 
 ### JS
 - Ripasso DOM 
+- Events: https://javascript.info/introduction-browser-events
 - Event delegation: https://javascript.info/event-delegation
-
-### Tools
-- 
-
-### Misc
-- 
 
 -----
 

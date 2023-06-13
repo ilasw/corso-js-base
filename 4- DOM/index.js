@@ -46,7 +46,7 @@ let cognome = '';
 
 if (firstNameInput) {
     console.log(firstNameInput);
-    
+
     // aggiungo un listener di eventi al mio firstNameInput
     // ascolto l'evento "input" usando la function che passo come 2° param
     firstNameInput.addEventListener('input', function (ev) {
@@ -63,8 +63,8 @@ window.logOnInput = function (ev) {
 }
 
 // aggiorniamo il nostro output con nome e cognome
-function updateFullName (){
-    if(outputEl){
+function updateFullName() {
+    if (outputEl) {
         outputEl.innerHTML = `${nome} ${cognome}`;
     }
 }
@@ -82,10 +82,83 @@ function updateFullName (){
 // al click su ".minus" diminuiamo il valore dello span di uno e lo salviamo in html
 // al click su ".plus" aumentiamo il valore dello span di uno e lo salviamo in html
 
-document.querySelector() // per prendere gli elementi
-console.log(outputEl.innerHTML) // torna lo HTML del mio elemento
-outputEl.innerHTML = 2 // salva lo HTML nel mio elemento
+(function () {
+    // -- Counter senza EventDelegation --
 
-buttonPlus.addEventListener('click', function(){
+    // const buttonPlus = document.querySelector('.counter button.plus');
+    // const buttonMinus = document.querySelector('.counter button.minus');
+    // const spanValue = document.querySelector('.counter span.value');
 
-});
+    // if (spanValue && buttonMinus && buttonPlus) {
+
+    //     buttonPlus.addEventListener('click', () => {
+    //         console.log('click su buttonPlus')
+
+    //         const currentValue = Number(spanValue.innerHTML); // torna html dentro il mio span, è sempre un "string"
+    //         spanValue.innerHTML = currentValue + 1; // sostituisco html con il nuovo valore incrementato di 1;
+    //     })
+
+    //     buttonMinus.addEventListener('click', function () {
+    //         console.log(this) // "this" -> elemento buttonMinus
+
+    //         const currentValue = Number(spanValue.innerHTML); // torna html dentro il mio span, è sempre un "string"
+    //         spanValue.innerHTML = currentValue - 1; // sostituisco html con il nuovo valore incrementato di 1;
+    //     })
+
+    // } else {
+    //     console.error('Sei un folle a non avere questo HTML! >:( ')
+    // }
+})();
+
+(function () {
+
+    const counterEl = document.querySelector('.counter');
+    const resultEl = counterEl.querySelector('.value');
+
+    document.addEventListener('click', function(){
+        console.log('evento arrivato fino al document');
+    })
+
+    counterEl.addEventListener('click', function (event) {
+        // evento click
+        console.log(event);
+
+        // posso far si che il click non avvenga
+        event.preventDefault();
+
+        // questo metodo ferma il fenomeno del bubbling
+        event.stopPropagation();
+
+        // è l'elemento che è epicentro del mio evento
+        console.log('event.target', event.target)
+
+        // event.currentTarget è counterEl perché è l'elemento che ascolta l'evento
+        // console.log('event.currentTarget', event.currentTarget)
+
+        const targetClass = event.target.className;
+
+        if (targetClass === 'plus') {
+            resultEl.innerHTML = Number(resultEl.innerHTML) + 1;
+        } else if (targetClass === 'minus') {
+            resultEl.innerHTML = Number(resultEl.innerHTML) - 1;
+        } else {
+            console.log('non hai cliccato su nessun button')
+        }
+
+        // switch (targetClass) {
+        //     case 'plus':{
+        //         resultEl.innerHTML = Number(resultEl.innerHTML) + 1;
+        //         break;
+        //     }
+        //     case 'minus':{
+        //         resultEl.innerHTML = Number(resultEl.innerHTML) - 1;
+        //         break;
+        //     }
+        //     default:{
+        //         console.log('non hai cliccato su nessun button')
+        //     }
+        // }
+    });
+
+})();
+
